@@ -14,8 +14,12 @@ const server = http.createServer((req, res) => {
 
   if (data.query.name) {
     res.end(`<h1>Привет, ${data.query.name}</h1>`);
+  } else if (req.url === "/html") {
+    res.end("<h1>HTML - это гипертекстовый язык разметки</h1>");
+  } else if (req.url === "/css") {
+    res.end("<h1>CSS - это каскадная таблица стилей</h1>");
   } else {
-    res.end("<h1 style='color: red'>Привет от сервера!</h1>");
+    res.end("<h1 style='color: green'>Привет от сервера!</h1>");
   }
 });
 

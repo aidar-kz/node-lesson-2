@@ -3,4 +3,5 @@
 // require("./2.5-cyrillic");
 // require("./3-callback");
 // require("./4-args");
-require("./server");
+// require("./server");
+require("./console");
